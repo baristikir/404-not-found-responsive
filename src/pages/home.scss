@@ -1,0 +1,91 @@
+@import "../variables";
+@import "../mixins";
+.content-image{
+    @include breakpoint-up(large){
+        width: 539px;
+        height: 414px;
+    }
+    @include breakpoint-down(medium){
+        width: 286px;
+        height: 238px;
+        justify-content: center;
+        align-items: center;
+    }
+    @include breakpoint-down(small){
+        width: 286px;
+        height: 238px;
+    }
+}
+
+.content{
+  padding-left: 7.5rem;
+
+  @include breakpoint-down(small){
+    padding-left: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.content-heading{
+  font-size: $heading-font;
+  max-width: 36.625rem;
+
+  @include breakpoint-down(small){
+    font-size: $heading-mobile-font;
+    max-width: 21.875rem;
+  }
+}
+
+.content-text{
+  max-width: 24rem;
+}
+
+.home-navigation {
+    position: relative;
+    margin-top: 4rem;
+
+    a,a:visited, a:link{
+        line-height: 40px;
+        width: 13.5rem;
+        height: 4.25rem;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 44px;
+        padding-right: 44px;
+        font-size: $button-font;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        background: $primary-color;
+        border: 2px solid $primary-color;
+        letter-spacing: 2px;
+        text-align: center;
+        position: relative;
+        transition: all .35s;
+    }
+      
+      a span{
+        position: relative;
+        z-index: 2;
+      }
+      
+      a::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background:white;
+        transition: all .35s;
+      }
+      
+      a:hover{
+        color: $primary-color;
+      }
+      
+      a:hover::after{
+        width: 100%;
+      }
+} 

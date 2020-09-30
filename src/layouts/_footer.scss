@@ -1,0 +1,26 @@
+.footer{
+    position: relative;
+    margin-top: 10rem;
+    text-align: center;
+
+    > span{
+        font-family: $font-footer;
+        font-size: $button-font;
+        
+    }
+    > a, a:visited, a:link{
+        text-decoration: none;
+        font-weight: $bold;
+        transition: background-position 275ms ease;
+        background: linear-gradient(to right, midnightblue, midnightblue 50%, royalblue 50%);
+        background-clip: text;
+        background-size: 200% 100%;
+        background-position: 100%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &:hover{
+            background-position: 0 100%;
+        }
+    }
+}

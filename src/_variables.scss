@@ -1,21 +1,26 @@
 // ****************
 // * Fonts Import *
 // ****************
-
-
+$font-content: 'Space Mono', monospace;
+$font-title: 'Inconsolata', monospace;
+$font-footer: 'Montserrat', sans-serif;
 
 // *******************
 // * Color Variables *
 // *******************
-
-
+$primary-color: #333333;
+$button-font-color: #FFFFFF;
 
 // **************
 // * Font Sizes *
 // **************
-
-
+$heading-font: 4rem;
+$heading-mobile-font: 3rem;
+$normal-font: 1.5rem;
+$button-font: 0.875rem;
 
 // ******************
 // * Font Typefaces *
 // ******************
+$regular: 400;
+$bold: 700;
