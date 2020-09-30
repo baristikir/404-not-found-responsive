@@ -25,7 +25,7 @@ body {
           flex-direction: column;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .flex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -52,10 +52,12 @@ body {
           justify-content: center;
 }
 
-.container {
-  padding-top: 12.5rem;
-  padding-left: 7.5rem;
-  padding-right: 4.875rem;
+@media (min-width: 64em) {
+  .container {
+    padding-top: 12.5rem;
+    padding-left: 7.5rem;
+    padding-right: 4.875rem;
+  }
 }
 
 @media (min-width: 40em) {
@@ -63,6 +65,14 @@ body {
     padding-top: 4rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 23.5em) {
+  .container {
+    padding-top: 64px;
+    padding-left: 44px;
+    padding-right: 44px;
   }
 }
 
@@ -202,6 +212,12 @@ body {
   max-width: 36.625rem;
 }
 
+@media (max-width: 63.9375em) {
+  .content-heading {
+    font-size: 42px;
+  }
+}
+
 @media (max-width: 23.5em) {
   .content-heading {
     font-size: 3rem;
@@ -211,6 +227,12 @@ body {
 
 .content-text {
   max-width: 24rem;
+}
+
+@media (max-width: 63.9375em) {
+  .content-text {
+    font-size: 16px;
+  }
 }
 
 .home-navigation {

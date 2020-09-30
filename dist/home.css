@@ -46,6 +46,12 @@
   max-width: 36.625rem;
 }
 
+@media (max-width: 63.9375em) {
+  .content-heading {
+    font-size: 42px;
+  }
+}
+
 @media (max-width: 23.5em) {
   .content-heading {
     font-size: 3rem;
@@ -55,6 +61,12 @@
 
 .content-text {
   max-width: 24rem;
+}
+
+@media (max-width: 63.9375em) {
+  .content-text {
+    font-size: 16px;
+  }
 }
 
 .home-navigation {

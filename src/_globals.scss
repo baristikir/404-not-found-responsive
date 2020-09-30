@@ -22,10 +22,13 @@ body {
     display: flex;
     flex-direction: column;
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
         flex-direction: row;
         align-items: center;
         justify-content: center;
+    }
+    @include breakpoint-up(small){
+
     }
 
     &-ai-c{
@@ -39,14 +42,22 @@ body {
 
 // * Content Paddings & Margins Helper Class * //
 .container {
-    padding-top: 12.5rem;
-    padding-left: 7.5rem;
-    padding-right: 4.875rem;
+    @include breakpoint-up(large){
+        padding-top: 12.5rem;
+        padding-left: 7.5rem;
+        padding-right: 4.875rem;
+    }
 
     @include breakpoint-up(medium){
         padding-top: 4rem;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
+    }
+
+    @include breakpoint-down(small){
+        padding-top: 64px;
+        padding-left: 44px;
+        padding-right: 44px;
     }
 }
 

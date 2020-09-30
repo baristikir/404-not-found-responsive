@@ -31,6 +31,10 @@
   font-size: $heading-font;
   max-width: 36.625rem;
 
+  @include breakpoint-down(medium){
+    font-size: 42px;
+  }
+
   @include breakpoint-down(small){
     font-size: $heading-mobile-font;
     max-width: 21.875rem;
@@ -39,6 +43,10 @@
 
 .content-text{
   max-width: 24rem;
+
+  @include breakpoint-down(medium){
+     font-size: 16px;
+  }
 }
 
 .home-navigation {
