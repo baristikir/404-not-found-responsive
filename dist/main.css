@@ -58,7 +58,7 @@ body {
   padding-right: 4.875rem;
 }
 
-@media (max-width: 63.9375em) {
+@media (min-width: 40em) {
   .container {
     padding-top: 4rem;
     padding-left: 1.5rem;
